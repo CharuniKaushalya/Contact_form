@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,500,600,700&subset=latin,cyrillic-ext);
+@import "bootstrap/bootstrap.min.css";
+@import "fontawesome/font-awesome.min.css";
+@import "animate/animate.min.css";
+
+
+/* PREDEFINED CLASSES */
+#success_message{ display: none;}
+
+/* BOOTSTRAP */
+blockquote {
+  font-size: 13px;
+  border-left-color: #014202 ;
+  line-height: 20px;
+  color: #828282;
+}
+blockquote p {
+  line-height: 12px;
+  color: #828282;
+}
+/* PAGINATION */
+.pagination {
+  width: 100%;
+  margin: 10px 0px;
+}
+.pagination > li > a,
+.pagination > li > span {
+  margin-left: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #757575;
+  border-color: #E5E5E5;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover {
+  color: #222;
+}
+.pagination > li.active > a,
+.pagination > li.active > a:hover {
+  background: #014202 ;
+  color: #FFF;
+  border-color: #014202 ;
+}
+.pagination.pagination-sm {
+  margin: 0px;
+  width: auto;
+}
+.pagination.pagination-sm.push-down-20 {
+  margin-bottom: 20px;
+}
+.pagination.pagination-sm.push-up-20 {
+  margin-top: 20px;
+}
+/* END PAGINATION */
+/* BUTTONS */
+.btn {
+  font-size: 12px;
+  padding: 4px 12px;
+  line-height: 20px;
+  font-weight: 400;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.btn.btn-xl,
+.btn .btn-group-xl > .btn {
+  font-size: 15px;
+  padding: 12px 24px;
+  font-weight: 600;
+}
+.btn.btn-lg,
+.btn .btn-group-lg > .btn {
+  font-size: 14px;
+  padding: 8px 20px;
+}
+.btn.btn-sm,
+.btn .btn-group-sm > .btn {
+  font-size: 11px;
+  padding: 2px 10px;
+}
+.btn.btn-xs,
+.btn .btn-group-xs > .btn {
+  font-size: 10px;
+  padding: 0px 5px;
+}
+.btn .fa {
+  margin-right: 5px;
+}
+.btn-default {
+  border-color: #DDD;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-color: #F5F5F5;
+  border-color: #DDD;
+}
+.btn-primary {
+  background-color: #014202 ;
+  border-color: #045605;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #045605;
+  border-color: #045605;
+}
+.btn-primary[disabled],
+.btn-primary.disabled {
+  background: #e76549;
+  border-color: #e65d40;
+}
+.btn-danger {
+  background-color: #B64645;
+  border-color: #B64645;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  background-color: #a43f3e;
+  border-color: #a43f3e;
+}
+.btn-danger[disabled],
+.btn-danger.disabled {
+  background: #c66968;
+  border-color: #c36261;
+}
+.btn-warning {
+  background-color: #FEA223;
+  border-color: #FEA223;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  background-color: #fe970a;
+  border-color: #fe970a;
+}
+.btn-warning[disabled],
+.btn-warning.disabled {
+  background: #feb756;
+  border-color: #feb34c;
+}
+.btn-success {
+  background-color: #95B75D;
+  border-color: #95B75D;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background-color: #89ad4d;
+  border-color: #89ad4d;
+}
+.btn-success[disabled],
+.btn-success.disabled {
+  background: #acc780;
+  border-color: #a7c479;
+}
+.btn-info {
+  background-color: #3FBAE4;
+  border-color: #3FBAE4;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  background-color: #29b2e1;
+  border-color: #29b2e1;
+}
+.btn-info[disabled],
+.btn-info.disabled {
+  background: #6ccaea;
+  border-color: #63c7e9;
+}
+.input-group-btn > .btn:hover,
+.input-group-btn > .btn:focus,
+.input-group-btn > .btn:active {
+  z-index: 0;
+}
+/* END BUTTONS */
+/* BREADCRUMB */
+.breadcrumb {
+  float: left;
+  width: 100%;
+  background: transparent;
+  margin-bottom: 0px;
+  padding: 6px 15px 7px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+.breadcrumb li,
+.breadcrumb li a {
+  font-size: 11px;
+  line-height: 12px;
+  color: #a8a8a8;
+  text-decoration: none;
+}
+.breadcrumb li:hover,
+.breadcrumb li a:hover {
+  color: #757575;
+}
+.breadcrumb li:last-child {
+  color: #757575;
+}
+.breadcrumb > li + li:before {
+  font-family: "FontAwesome";
+  content: "\f105";
+  color: #a8a8a8;
+  padding: 0px 8px;
+}
+/* EOF BREADCRUMB */
